@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmo Derme | About-us</title>
+    <!-- Styles -->
+    <link href="css/output.min.css" rel="stylesheet" />
+    <!--FavIcon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#f48f35" />
+    <meta name="msapplication-TileColor" content="#f48f35" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+  
+      .about-us {
+        width: 100%;
+        height: 100vh;
+        background: silver;
+        position: relative;
+        overflow-x: hidden;
+      }
+      .content {
+        width: 90%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+      }
+      .logo {
+        display: flex;
+        padding-top: 3rem;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content:start;
+        align-items: center;
+        z-index: 2;
+        position: absolute;
+        width: 30%;
+      }
+      .aboutUs-img {
+        width: 100%;
+        height: 75%;
+        object-fit: contain;
+        transform: translateX(20%);
+      }
+      .Levant {
+        background: url(images/levant.svg);
+        width: 60%;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        height: 20px;
+        bottom: 2%;
+        transform: translateX(40%);
+        z-index: 2;
+      }
+      @media (max-width: 991.98px) {
+        .logo {
+          width: 50%;
+        }
+        .aboutUs-img {
+          transform: translateX(20%);
+          height: 60%;
+        }
+      }
+      @media (max-width: 767.98px) {
+        .content {
+          justify-content: center;
+        }
+        .logo {
+          width: 70%;
+          padding-top: 1rem;
+        }
+        .aboutUs-img {
+          transform: translate(0, 60px);
+        }
+        .Levant {
+          transform: translate(0, 60px);
+        }
+      }
+      @media (max-width: 575.98px) {
+        .aboutUs-img {
+          transform: translate(0);
+          height: 50%;
+          width: 100%;
+        }
+        .Levant {
+          transform: translate(0);
+        }
+      }
+      @media (max-width: 430px) {
+        .aboutUs-img {
+          height: 35%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-100 about-us">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" width="90%" alt="" />
+          </a>
+          <div>
+            Cosmoderm cosmetic clinic for skin and hair care is a clinic
+            specialized in all types of treatments equipped with the latest
+            equipment and technologies and under the supervision and presence of
+            the best cosmetic experts in order to obtain the best possible care
+            for you.
+          </div>
+        </div>
+        <a href="https://www.levantsy.com" class="Levant"></a>
+      </div>
+      <div class="d-flex justify-content-end align-items-end h-100 w-100">
+        <img src="images/13452.png" class="aboutUs-img" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
